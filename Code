@@ -1,0 +1,32 @@
+try:
+    for i in ['a','b','c']:
+        print(i**2)
+except:
+    print("Sorry")
+    
+    
+try:
+    x = 5
+    y = 0
+
+    z = y/x
+except:
+    print('Try again')
+    
+finally:
+    print('All done')
+    
+    
+def ask():
+    
+    while True:
+        try:
+            n = int(input("Please enter an integer: "))
+        except:
+            print('An error occured! Please try again. \n')
+            continue
+        else:
+            break
+            
+    print("Your number squared is: ")
+    print(n**2)
